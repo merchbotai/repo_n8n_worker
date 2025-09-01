@@ -1,0 +1,12 @@
+# Railway config-as-code (n8n-worker)
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+restartPolicyType = "ALWAYS"
+numReplicas = 1
+sleepApplication = false
+deploymentTimeout = 600
+
+
